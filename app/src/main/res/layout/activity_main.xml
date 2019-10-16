@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/stateKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="KH ein:"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextKH"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/stateEiweis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Eiweis ein:"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextEiweis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:isScrollContainer="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/stateFett"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fett ein:"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextFett"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/buttonBerechnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="berechnen" />
+
+    </LinearLayout>
+</ScrollView>
