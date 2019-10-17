@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="445dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="6dp">
+
+        <TextView
+            android:id="@+id/phoneFettText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bitte geben Sie den Fett anteil ein" />
+
+        <EditText
+            android:id="@+id/phoneFett"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/phoneKohlenhydrateText"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="Bitte geben Sie den Kohlenhydrate anteil ein"
+            app:layout_constraintBottom_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/phoneKohlenhydrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/phoneEiweisText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bitte geben Sie den Eiweis anteil ein" />
+
+        <EditText
+            android:id="@+id/phoneEiweis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/phoneButtonCalc"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="berechnen" />
+
+        <TextView
+            android:id="@+id/phoneErgebnis"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:text="Ergebnis:" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

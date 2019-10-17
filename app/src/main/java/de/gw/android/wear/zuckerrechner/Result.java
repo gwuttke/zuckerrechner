@@ -1,4 +1,4 @@
-package de.gw.wear.zuckerrechner;
+package de.gw.android.wear.zuckerrechner;
 
 import android.content.Intent;
 import android.os.Bundle;
